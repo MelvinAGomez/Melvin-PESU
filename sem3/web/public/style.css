@@ -1,0 +1,126 @@
+body{ 
+    height: 100%;
+    background-color: rgb(255, 224, 166);
+
+}
+
+.parent {
+height: 200px;
+background: rgb(255, 224, 166);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 990px;
+}
+
+.child {
+background-color: #2ad767;
+width: 500px;
+height: 480px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+ul div{
+    border-radius: 10px;
+    border-style:solid;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding:50px;
+}
+
+div.rock{
+    margin-right: 10px;
+}
+div.kpop{
+    margin-right: 10px;
+}
+nav{
+    background-color: black;
+    height: 80px;
+    color: white;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+
+
+label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+
+
+input[type="checkbox"] {
+    opacity:1;
+    height: 50px;
+    width: 17px;
+    position: absolute;
+    z-index: 2;
+}
+
+   input[type="checkbox"] + label{
+    	background:url('heartoutline.png');
+    	height: 16px;
+    	width: 16px;
+    	display:inline-block;
+        padding: 0 0 0 0px;
+    }
+
+    input[type="checkbox"]:checked + label{
+        background:url('redheart.png');
+    	height: 16px;
+    	width: 16px;
+    	display:inline-block;
+        padding: 0 0 0 0px;
+    }
+
+
+#submit{
+    transition: all 0.6s ease;
+}
+#submit:hover{
+    background: grey;
+
+}

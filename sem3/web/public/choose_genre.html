@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Signup Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style_genre.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    
+        <form action="/choose_genre" method="POST" id="form__submit">
+        <div class="container">
+        <h1 style="color:white;">CHOOSE GENRE</h1>
+                <div class="row1">
+
+                    <input type="submit" value="KPOP" id="KPOP" name="KPOP" hidden>
+                    <img  src="kpop.png" alt="kpopSubmitimg" onclick="submitForm1()"/></input>
+                    
+                    <input type="submit" value="KPOP" id="POP" name="POP" hidden>
+                    <img  src="pop.png" alt="popSubmitimg" onclick="submitForm2()" /></input>
+                </div>
+                    
+                    
+                <div class="row2">
+                    <input type="submit" value="RAP" id="RAP" name="RAP" hidden>
+                    <img  src="rap.png" alt="rapSubmitimg"  onclick="submitForm3()"/></input>
+                    
+                    <input type="submit" value="ROCK" id="ROCK" name="ROCK" hidden>
+                    <img  src="rock.png" alt="rockSubmitimg"  onclick="submitForm4()"/></input>
+                    
+                </div>
+
+                <!--
+                <div class="animation-area">
+                    <ul class="box-area">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                -->
+
+
+
+			 <script>
+                
+        function submitForm1() {
+            let submit = document.getElementById("KPOP");
+             submit.click();
+        }
+        
+		
+		 function submitForm2() {
+            let submit = document.getElementById("POP");
+             submit.click();
+        }
+		
+		 function submitForm3() {
+            let submit = document.getElementById("RAP");
+             submit.click();
+        }
+		
+		 function submitForm4() {
+            let submit = document.getElementById("ROCK");
+             submit.click();
+        }
+    </script>
+
+
+            
+        </div>
+  
+</body>
+
+</html>

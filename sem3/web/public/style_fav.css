@@ -1,0 +1,16 @@
+body{
+    background-image: linear-gradient(to bottom,#B621FE,#1FD1F9);
+    height: 900px;
+}
+
+
+#title{
+    color: white;
+    background-color: black;
+    font-weight: 900;
+}
+
+.table{
+    color: white;
+    font-weight:900;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKY</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="mongo.js"></script>
+    <nav>Home</nav>
+    <div class="parent">
+        <form class="child" action="/main" method="POST"> 
+            <ul>
+                <div class="rock" name="rock" onclick="rock()">
+                    <p><b>ROCK</b></p>
+                </div>
+                <div class="pop" name="pop" onclick="pop()" >
+                    <p><b>POP</b></p>
+                </div>
+            </ul>
+            <ul>
+                <div class="kpop" name="kpop" onclick="kpop()">
+                    <p><b>KPOP</b></p>
+                </div>
+                <div class="rap" name="rap"onclick="rap()" >
+                    <p><b>RAP</b></p>
+                </div>
+            </ul>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </div>
+    <!--
+    <script>
+        $(".rock").click(function(){
+            $(".rock").css({"background-color":"green"})
+        })
+        $(".pop").click(function(){
+            $(".pop").css({"background-color":"green"})
+        })
+        $(".kpop").click(function(){
+            $(".kpop").css({"background-color":"green"})
+        })
+        $(".rap").click(function(){
+            $(".rap").css({"background-color":"green"})
+        })
+    </script>
+    -->
+</body>
+</html>
