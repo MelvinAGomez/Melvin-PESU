@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Metrics for Test ID: {{ test_id }}</h2>
+    {% if metrics %}
+        <table>
+            <tr>
+                <th>Driver</th>
+                <th>Mean Latency</th>
+                <th>Median Latency</th>
+                <th>Min Latency</th>
+                <th>Max Latency</th>
+            </tr>
+            {% for driver, data in metrics.items() %}
+                <tr>
+                    <td>{{ driver }}</td>
+                    <td>{{ data['Mean_Latency'] }}</td>
+                    <td>{{ data['Median_Latency'] }}</td>
+                    <td>{{ data['Min_Latency'] }}</td>
+                    <td>{{ data['Max_Latency'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No metrics available for this test ID.</p>
+    {% endif %}
+</body>
+</html>
